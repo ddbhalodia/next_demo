@@ -13,7 +13,7 @@ async function getDetails(blogID: string) {
     });
   return await res?.json();
 }
-
+  
 export default async function details({ params }: { params: { blogID: string } }) {
 
   const detail = await getDetails(params?.blogID);  
