@@ -22,6 +22,7 @@ export default async function details({ params }: { params: { blogID: string } }
     <div className="text-center mt-10 flex flex-col justify-between items-center h-56 " >
       <title>{detail?.items[0]?.title}</title>
       <meta name="title" content={`${detail?.items[0]?.title}`} />
+      <meta property="og:image" content={`${detail?.items[0]?.image}`} />
       <BlogDetails details={detail?.items[0]} />      
     </div >
   )
